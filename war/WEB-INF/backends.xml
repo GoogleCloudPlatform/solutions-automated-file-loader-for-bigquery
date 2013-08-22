@@ -1,0 +1,9 @@
+<backends>
+ <backend name="bigqueryloader">
+   <class>B2</class>
+   <instances>2</instances>
+   <options>
+       <dynamic>true</dynamic>
+   </options>
+ </backend>
+</backends>

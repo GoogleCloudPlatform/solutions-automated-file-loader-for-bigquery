@@ -1,0 +1,14 @@
+<queue-entries>
+  <total-storage-limit>50M</total-storage-limit>
+  <queue>
+    <name>bigqueryloader-queue</name>
+    <rate>20/s</rate>
+    <bucket-size>100</bucket-size>
+    <max-concurrent-requests>200</max-concurrent-requests>
+    <retry-parameters>
+      <min-backoff-seconds>10</min-backoff-seconds>
+      <max-backoff-seconds>200</max-backoff-seconds>
+      <max-doublings>0</max-doublings>
+    </retry-parameters>
+  </queue>
+</queue-entries>

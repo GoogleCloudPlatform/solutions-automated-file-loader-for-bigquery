@@ -1,0 +1,31 @@
+{
+    "applicationId": <<your app id>>,
+    "projectNumber": <<your project number>>,
+    "projectId": <<your project id>>,
+    "serviceAccount": <<your service account>>,
+    "apiKey": <<your api key>>,
+    "cloudStorageConfigs": {
+        "channelId": <<your channel id>>
+    },
+    "bigqueryConfigs": {
+        "datasetId": <<your dataset id>>,
+        "tableName": "person_table",
+        "delimiter": "|",
+        "columns": [
+            {
+                "name": "person_name",
+                "type": "STRING"
+            },
+            {
+                "name": "age",
+                "type": "INTEGER"
+            },
+            {
+                "name": "height",
+                "type": "FLOAT"
+            }
+        ],
+        "headerLines": "1",
+        "jobTimeout": "30000"
+    }
+}
